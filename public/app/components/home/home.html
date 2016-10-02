@@ -1,0 +1,129 @@
+<div ui-view='header'></div>
+<div ng-controller="homeCtrl as home" layout-padding>
+	<div layout="row" layout-align="center center">
+		<h2 flex style="text-align:center; color:#f44336;" class="md-display-3">Cake</h2>
+		<h2 flex style="text-align:center; color:#f44336;" class="md-display-3">${{home.liveClose}}</h2>
+	</div>
+	<div>
+		<linechart style="height:400px;" data="home.data" options="home.options"></linechart>
+	</div>
+
+	<div ng-cloak>
+		<md-content>
+			<md-tabs md-stretch-tabs="always" md-dynamic-height md-border-bottom class="md-warn">
+				<md-tab label="1D">
+					<md-content class="md-padding">
+						<div class="stats" layout="row" layout-padding>
+							<div layout="column" flex layout-padding>
+								<div layout="row" class="line" layout-sm="column" layout-align="center center">
+									<span flex class="md-headline">Day High</span>
+									<span flex class="md-subhead">$321.12</span>
+								</div>
+								<div layout="row" layout-sm="column" layout-align="center center">
+									<span  flex class="md-headline">Open</span>
+									<span flex class="md-subhead">$121.22</span>
+								</div>
+								<div layout="row"  layout-sm="column" layout-align="center center">
+									<span flex class="md-headline">Avg. Volume </span>
+									<span flex class="md-subhead">$501.78</span>
+								</div>
+								<div layout="row" layout-sm="column" layout-align="center center">
+									<span flex class="md-headline">52wk High</span>
+									<span flex class="md-subhead">$1321.12</span>
+								</div>
+							</div>
+							<div layout="column" flex layout-padding>
+								<div layout="row" layout-sm="column" class="line" layout-align="center center">
+									<span flex class="md-headline">Day Low</span>
+									<span flex class="md-subhead">$58.12</span>
+								</div>
+								<div layout="row" layout-sm="column" layout-align="center center">
+									<span  flex class="md-headline">Close</span>
+									<span flex class="md-subhead">$600.22</span>
+								</div>
+								<div layout="row"  layout-sm="column" layout-align="center center">
+									<span flex class="md-headline">Volume </span>
+									<span flex class="md-subhead">$501.78</span>
+								</div>
+								<div layout="row" layout-sm="column" layout-align="center center">
+									<span flex class="md-headline">52wk Low</span>
+									<span flex class="md-subhead">$50.12</span>
+								</div>
+							</div>
+						</div>
+					</md-content>
+				</md-tab>
+				<md-tab md-stretch-tabs="always" label="1M">
+					<md-content class="md-padding">
+						<div class="stats" layout="row" layout-padding>
+							<div layout="column" flex layout-padding>
+								<div layout="row" class="line" layout-sm="column" layout-align="center center">
+									<span flex class="md-headline">Day High</span>
+									<span flex class="md-subhead">$321.12</span>
+								</div>
+								<div layout="row" layout-sm="column" layout-align="center center">
+									<span  flex class="md-headline">Open</span>
+									<span flex class="md-subhead">$121.22</span>
+								</div>
+								<div layout="row"  layout-sm="column" layout-align="center center">
+									<span flex class="md-headline">Avg. Volume </span>
+									<span flex class="md-subhead">$501.78</span>
+								</div>
+								<div layout="row" layout-sm="column" layout-align="center center">
+									<span flex class="md-headline">52wk High</span>
+									<span flex class="md-subhead">$1321.12</span>
+								</div>
+							</div>
+							<div layout="column" flex layout-padding>
+								<div layout="row" layout-sm="column" class="line" layout-align="center center">
+									<span flex class="md-headline">Day Low</span>
+									<span flex class="md-subhead">$58.12</span>
+								</div>
+								<div layout="row" layout-sm="column" layout-align="center center">
+									<span  flex class="md-headline">Close</span>
+									<span flex class="md-subhead">$600.22</span>
+								</div>
+								<div layout="row"  layout-sm="column" layout-align="center center">
+									<span flex class="md-headline">Volume </span>
+									<span flex class="md-subhead">$501.78</span>
+								</div>
+								<div layout="row" layout-sm="column" layout-align="center center">
+									<span flex class="md-headline">52wk Low</span>
+									<span flex class="md-subhead">$50.12</span>
+								</div>
+							</div>
+						</div>
+					</md-content>
+				</md-tab>
+				<md-tab md-stretch-tabs="always" label="3M">
+					<md-content class="md-padding">
+						<h1 class="md-display-2">Tab Three</h1>
+						<p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus. Curabitur posuere molestie dictum. Morbi eget congue risus, quis rhoncus quam. Suspendisse vitae hendrerit erat, at posuere mi. Cras eu fermentum nunc. Sed id ante eu orci commodo volutpat non ac est. Praesent ligula diam, congue eu enim scelerisque, finibus commodo lectus.</p>
+					</md-content>
+				</md-tab>
+				<md-tab md-stretch-tabs="always" label="YTD">
+					<md-content class="md-padding">
+						<h1 class="md-display-2">Tab Four</h1>
+						<p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus. Curabitur posuere molestie dictum. Morbi eget congue risus, quis rhoncus quam. Suspendisse vitae hendrerit erat, at posuere mi. Cras eu fermentum nunc. Sed id ante eu orci commodo volutpat non ac est. Praesent ligula diam, congue eu enim scelerisque, finibus commodo lectus.</p>
+					</md-content>
+				</md-tab>
+				<md-tab md-stretch-tabs="always" label="1Y">
+					<md-content class="md-padding">
+						<h1 class="md-display-2">Tab Five</h1>
+						<p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus. Curabitur posuere molestie dictum. Morbi eget congue risus, quis rhoncus quam. Suspendisse vitae hendrerit erat, at posuere mi. Cras eu fermentum nunc. Sed id ante eu orci commodo volutpat non ac est. Praesent ligula diam, congue eu enim scelerisque, finibus commodo lectus.</p>
+					</md-content>
+				</md-tab>
+				<md-tab md-stretch-tabs="always" label="All">
+					<md-content class="md-padding">
+						<h1 class="md-display-2">Tab Three</h1>
+						<p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus. Curabitur posuere molestie dictum. Morbi eget congue risus, quis rhoncus quam. Suspendisse vitae hendrerit erat, at posuere mi. Cras eu fermentum nunc. Sed id ante eu orci commodo volutpat non ac est. Praesent ligula diam, congue eu enim scelerisque, finibus commodo lectus.</p>
+					</md-content>
+				</md-tab>
+			</md-tabs>
+		</md-content>
+	</div>
+	<div layout="row" layout-sm="column" layout-align="center center" layout-wrap>
+		 <md-button class="md-raised md-warn">Buy</md-button>
+		 <md-button class="md-raised md-warn">Sell</md-button>
+	</div>
+</div>
